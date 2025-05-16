@@ -1,0 +1,36 @@
+hydra:
+  job:
+    chdir: false
+input_file: ???                # input file path for loading the ctxs
+output_file: ???                 # output file path for saving the ctxs
+
+## default config
+seed: 43
+
+## model config
+model_name: llama2-7b-chat       # the name of the model to use,
+use_vllm: false                  # whether to use vllm
+gpu_memory_utilization: 0.5      # the ratio of GPU memory to use
+batch_size: 1
+self_define_lm: false
+generation_kwargs:
+  temperature: 0
+  do_sample: false
+  num_return_sequences: 1
+reverse: false
+## task config
+task_name: narrativeqa
+dataset_path: index_data/LongBench
+buffer_length: 20
+
+## retrieval config
+method: mbr3                     # use our method
+topk: 1
+partial_retrieve: false
+resume_forward: true
+retrieve_topk: 3
+stop_at_layer: 12
+retrieve_mode: v1
+
+## parallel config
+parallel_num: 1

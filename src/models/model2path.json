@@ -1,0 +1,17 @@
+{
+    "bert-base-uncased": "/new_disk/models_for_all/bert-base-uncased",
+    "sentence-bert": "/new_disk/med_group/lyk/models/all-MiniLM-L6-v2",
+    "llama2-7b-chat": "/new_disk/models_for_all/llama-2-7b-chat-hf",
+    "llama3-8b-instruct": "/new_disk/models_for_all/Meta-Llama-3-8B-Instruct",
+    "llama3.1-8b-instruct": "/new_disk/models_for_all/Llama3.1/llama3.1-8B-Instruct",
+    "longchat-v1.5-7b-32k": "lmsys/longchat-7b-v1.5-32k",
+    "xgen-7b-8k": "Salesforce/xgen-7b-8k-inst",
+    "internlm-7b-8k": "internlm/internlm-chat-7b-8k",
+    "chatglm2-6b": "THUDM/chatglm2-6b",
+    "chatglm2-6b-32k": "THUDM/chatglm2-6b-32k",
+    "chatglm3-6b-32k": "THUDM/chatglm3-6b-32k",
+    "vicuna-v1.5-7b-16k": "lmsys/vicuna-7b-v1.5-16k",
+    "opt-1.3b": "/new_disk/models_for_all/opt-1.3b",
+    "gpt-neo-2.7b": "/new_disk/models_for_all/gpt-neo-2.7B",
+    "Qwen-2.5-0.5b": "/new_disk/models_for_all/Qwen-2.5-0.5b"
+}

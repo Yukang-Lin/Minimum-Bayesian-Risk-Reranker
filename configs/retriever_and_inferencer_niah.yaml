@@ -1,0 +1,41 @@
+hydra:
+  job:
+    chdir: false
+output_file: output/niah/temp.json                 # output file path for saving the ctxs
+
+## default config
+seed: 43
+
+## task config
+task_name: niah
+num_test: 1
+max_length: 32k
+min_length: 1k
+gap_length: 1k
+plot: true
+buffer_length: 20
+num_per: 16
+
+## model config
+model_name: llama2-7b-chat       # the name of the model to use
+use_vllm: false                  # whether to use vllm
+gpu_memory_utilization: 0.8      # the ratio of GPU memory to use
+batch_size: 1
+self_define_lm: false
+generation_kwargs:
+  temperature: 0
+  do_sample: false
+  num_return_sequences: ${num_test}
+reverse: false
+## retrieval config
+method: mbr3                      # use our method
+topk: 1
+retrieve_level: chunk
+partial_retrieve: false
+resume_forward: false
+retrieve_topk: 3
+stop_at_layer: 12
+split_chunk: false
+chunk_num: 4
+retrieve_mode: v1
+window_split: 4

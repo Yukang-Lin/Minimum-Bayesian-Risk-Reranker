@@ -1,0 +1,17 @@
+transformers==4.46.3
+hydra-core
+datasets
+evaluate
+scikit-learn
+rank_bm25
+accelerate
+nltk
+dppy
+faiss-gpu
+spacy
+openai
+grakel
+longbench
+jieba
+fuzzywuzzy
+rouge
